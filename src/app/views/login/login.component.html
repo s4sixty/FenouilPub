@@ -1,0 +1,51 @@
+<div class="app-body">
+  <main class="main d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card-group">
+            <div class="card p-4">
+              <div class="card-body">
+                <form [formGroup]="angForm" (ngSubmit)="onSubmit()">
+                  <h1>Fenouil</h1>
+                  <p class="text-muted">Gestionnaire de publicités</p>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="username" placeholder="Nom d'utilisateur" autocomplete="username" required>
+                  </div>
+                  <div *ngIf="submitted && angForm.controls['username'].errors" class="invalid-feedback">
+                      <div *ngIf="angForm.controls['username'].errors.required">Ce champ est requis</div>
+                  </div>
+                  <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Mot de passe" autocomplete="current-password" required>
+                  </div>
+                  <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+                      <div *ngIf="angForm.controls['password'].errors.required">
+                        Mot de passe invalide.
+                      </div>
+                  </div>
+                  <div *ngIf="error" class="alert alert-danger">
+                        Nom d'utilisateur ou mot de passe incorrect !
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <button type="submit" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary px-4">Se connecter</button>
+                    </div>
+                    <div class="col-6 text-right">
+                      <button type="button" class="btn btn-link px-0">Mot de passe oublié ?</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
