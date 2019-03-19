@@ -48,7 +48,6 @@ this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
         .pipe(first())
         .subscribe(
             data => {
-              console.log(data);
               this.router.navigate([this.returnUrl]);
             },
             error => {
