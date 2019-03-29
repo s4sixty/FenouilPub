@@ -1,16 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { DataTablesModule } from 'angular-datatables';
+import { ClientsService } from '../../_services/clients.service';
 
 
 @Component({
   templateUrl: 'dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
-  dtOptions: DataTables.Settings = {};
-  persons: Object[] = [];
+
+  clients: any = [];
+
   ngOnInit(): void {
+    this.getClients();
+  }
 
-    
+  constructor(private clientsservice : ClientsService) {}
 
+  getClients() : void {
+    this.clientsservice.getClients()
+      .subscribe(
+        result => this.clients= result,
+        error => console.log("Erreur :: " + error)
+      )
   }
 }

@@ -14,7 +14,7 @@
             <div class="h1 text-muted text-right mb-4">
               <i class="icon-user-follow"></i>
             </div>
-            <div class="h4 mb-0">385</div>
+            <div class="h4 mb-0">{{clients.length}}</div>
             <small class="text-muted text-uppercase font-weight-bold">Clients</small>
           </div>
         </div>
@@ -29,22 +29,47 @@
         </div>
       </div>
 
-      <table class="row-border hover">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>First name</th>
-              <th>Last name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>test</td>
-              <td>test</td>
-              <td>test</td>
-            </tr>
-          </tbody>
-          </table>
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-align-justify"></i> Liste des clients
+          </div>
+          <div class="card-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nom</th>
+                  <th>Nom d'utilisateur</th>
+                  <th>Date de création</th>
+                  <th>Email</th>
+                  <th>Commandes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let client of clients">
+                  <td>{{client.id}}</td>
+                  <td>{{client.first_name}}</td>
+                  <td>{{client.username}}</td>
+                  <td>{{client.date_created_gmt}}</td>
+                  <td>{{client.email}}</td>
+                  <td>{{client.orders_count}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
 
   <div class="row">
