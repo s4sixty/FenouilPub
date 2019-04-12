@@ -1,545 +1,260 @@
 <div class="animated fadeIn">
-    <div class="card-group mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="h1 text-muted text-right mb-4">
-              <i class="icon-people"></i>
-            </div>
-            <div class="h4 mb-0">87.500</div>
-            <small class="text-muted text-uppercase font-weight-bold">Visiteurs</small>
-          </div>
+  <div class="card-group mb-4">
+    <div class="card">
+      <div class="card-body">
+        <div class="h1 text-muted text-right mb-4">
+          <i class="icon-people"></i>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <div class="h1 text-muted text-right mb-4">
-              <i class="icon-user-follow"></i>
-            </div>
-            <div class="h4 mb-0">{{clients.length}}</div>
-            <small class="text-muted text-uppercase font-weight-bold">Clients</small>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <div class="h1 text-muted text-right mb-4">
-              <i class="icon-basket-loaded"></i>
-            </div>
-            <div class="h4 mb-0">1238</div>
-            <small class="text-muted text-uppercase font-weight-bold">Produits vendues</small>
-          </div>
-        </div>
+        <div class="h4 mb-0">69</div>
+        <small class="text-muted text-uppercase font-weight-bold">Visiteurs</small>
       </div>
-
-      <div class="col-lg-12">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-align-justify"></i> Liste des clients
-          </div>
-          <div class="card-body">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Nom</th>
-                  <th>Nom d'utilisateur</th>
-                  <th>Date de création</th>
-                  <th>Email</th>
-                  <th>Commandes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let client of clients">
-                  <td>{{client.id}}</td>
-                  <td>{{client.first_name}}</td>
-                  <td>{{client.username}}</td>
-                  <td>{{client.date_created_gmt}}</td>
-                  <td>{{client.email}}</td>
-                  <td>{{client.orders_count}}</td>
-                </tr>
-              </tbody>
-            </table>
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="h1 text-muted text-right mb-4">
+          <i class="icon-user-follow"></i>
         </div>
+        <div class="h4 mb-0">{{clients.length}}</div>
+        <small class="text-muted text-uppercase font-weight-bold">Clients</small>
       </div>
-
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          Traffic &amp; Sales
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="h1 text-muted text-right mb-4">
+          <i class="icon-basket-loaded"></i>
         </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="callout callout-info">
-                    <small class="text-muted">New Clients</small>
-                    <br>
-                    <strong class="h4">9,123</strong>
-                  </div>
-                </div><!--/.col-->
-                <div class="col-sm-6">
-                  <div class="callout callout-danger">
-                    <small class="text-muted">Recuring Clients</small>
-                    <br>
-                    <strong class="h4">22,643</strong>
-                  </div>
-                </div><!--/.col-->
-              </div><!--/.row-->
-              <hr class="mt-0">
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Monday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Tuesday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Wednesday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Thursday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Friday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Saturday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-4">
-                <div class="progress-group-prepend">
-                  <span class="progress-group-text">
-                    Sunday
-                  </span>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div><!--/.col-->
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="callout callout-warning">
-                    <small class="text-muted">Pageviews</small>
-                    <br>
-                    <strong class="h4">78,623</strong>
-                  </div>
-                </div><!--/.col-->
-                <div class="col-sm-6">
-                  <div class="callout callout-success">
-                    <small class="text-muted">Organic</small>
-                    <br>
-                    <strong class="h4">49,123</strong>
-                  </div>
-                </div><!--/.col-->
-              </div><!--/.row-->
-              <hr class="mt-0">
-              <div class="progress-group">
-                <div class="progress-group-header">
-                  <i class="icon-user progress-group-icon"></i>
-                  <div>Male</div>
-                  <div class="ml-auto font-weight-bold">43%</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group mb-5">
-                <div class="progress-group-header">
-                  <i class="icon-user-female progress-group-icon"></i>
-                  <div>Female</div>
-                  <div class="ml-auto font-weight-bold">37%</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                  <i class="icon-globe progress-group-icon"></i>
-                  <div>Organic Search</div>
-                  <div class="ml-auto font-weight-bold mr-2">191.235</div>
-                  <div class="text-muted small">(56%)</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                  <i class="icon-social-facebook progress-group-icon"></i>
-                  <div>Facebook</div>
-                  <div class="ml-auto font-weight-bold mr-2">51.223</div>
-                  <div class="text-muted small">(15%)</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                  <i class="icon-social-twitter progress-group-icon"></i>
-                  <div>Twitter</div>
-                  <div class="ml-auto font-weight-bold mr-2">37.564</div>
-                  <div class="text-muted small">(11%)</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="progress-group">
-                <div class="progress-group-header align-items-end">
-                  <i class="icon-social-linkedin progress-group-icon"></i>
-                  <div>LinkedIn</div>
-                  <div class="ml-auto font-weight-bold mr-2">27.319</div>
-                  <div class="text-muted small">(8%)</div>
-                </div>
-                <div class="progress-group-bars">
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div><!--/.col-->
-          </div><!--/.row-->
-          <br>
-          <table class="table table-responsive-sm table-hover table-outline mb-0">
-            <thead class="thead-light">
-              <tr>
-                <th class="text-center"><i class="icon-people"></i></th>
-                <th>User</th>
-                <th class="text-center">Country</th>
-                <th>Usage</th>
-                <th class="text-center">Payment Method</th>
-                <th>Activity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/1.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-success"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Yiorgos Avraamu</div>
-                  <div class="small text-muted">
-                    <span>New</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-us h4 mb-0" title="us" id="us"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>50%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>10 sec ago</strong>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-danger"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Avram Tarasios</div>
-                  <div class="small text-muted">
-
-                    <span>Recurring</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-br h4 mb-0" title="br" id="br"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>10%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-cc-visa" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>5 minutes ago</strong>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-warning"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Quintin Ed</div>
-                  <div class="small text-muted">
-                    <span>New</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-in h4 mb-0" title="in" id="in"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>74%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-cc-stripe" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>1 hour ago</strong>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-secondary"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Enéas Kwadwo</div>
-                  <div class="small text-muted">
-                    <span>New</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-fr h4 mb-0" title="fr" id="fr"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>98%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-paypal" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>Last month</strong>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-success"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Agapetus Tadeáš</div>
-                  <div class="small text-muted">
-                    <span>New</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-es h4 mb-0" title="es" id="es"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>22%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-google-wallet" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>Last week</strong>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">
-                  <div class="avatar">
-                    <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="avatar-status badge-danger"></span>
-                  </div>
-                </td>
-                <td>
-                  <div>Friderik Dávid</div>
-                  <div class="small text-muted">
-                    <span>New</span> | Registered: Jan 1, 2015
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="flag-icon flag-icon-pl h4 mb-0" title="pl" id="pl"></i>
-                </td>
-                <td>
-                  <div class="clearfix">
-                    <div class="float-left">
-                      <strong>43%</strong>
-                    </div>
-                    <div class="float-right">
-                      <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
-                    </div>
-                  </div>
-                  <div class="progress progress-xs">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </td>
-                <td class="text-center">
-                  <i class="fa fa-cc-amex" style="font-size:24px"></i>
-                </td>
-                <td>
-                  <div class="small text-muted">Last login</div>
-                  <strong>Yesterday</strong>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <div class="h4 mb-0">{{totalProduits}}</div>
+        <small class="text-muted text-uppercase font-weight-bold">Produits vendues</small>
       </div>
-    </div><!--/.col-->
-  </div><!--/.row-->
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 mb-4">
+    <!-- Nav tabs -->
+    <tabset>
+      <tab>
+        <ng-template tabHeading><i class="icon-equalizer"></i> Préférences</ng-template>
+        <div class="d-flex justify-content-center">
+          <div class="card w-75">
+            <div class="card-header">
+              <strong>Critères de sélection des clients</strong>
+            </div>
+            <div class="card-body">
+              <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="inputState">Catégorie socio-professionnelle</label>
+                  <select id="categorie" formControlName="categorie" class="form-control">
+                    <option *ngFor="let categorie of categories_sociopro">{{categorie}}</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="vat">Age</label>
+                    <input type="text" class="form-control" formControlName="age_min" id="age_min" placeholder="Min">
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label for="vat">Age</label>
+                    <input type="text" class="form-control" formControlName="age_max" id="age_max" placeholder="Max">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputState">Département de résidence</label>
+                  <select id="departement" formControlName="departement" class="form-control">
+                    <option value="" disabled selected>Département</option>
+                    <option value="00">(00) Hors France</option>
+                    <option value="01">(01) Ain </option>
+                    <option value="02">(02) Aisne </option>
+                    <option value="03">(03) Allier </option>
+                    <option value="04">(04) Alpes de Haute Provence </option>
+                    <option value="05">(05) Hautes Alpes </option>
+                    <option value="06">(06) Alpes Maritimes </option>
+                    <option value="07">(07) Ardèche </option>
+                    <option value="08">(08) Ardennes </option>
+                    <option value="09">(09) Ariège </option>
+                    <option value="10">(10) Aube </option>
+                    <option value="11">(11) Aude </option>
+                    <option value="12">(12) Aveyron </option>
+                    <option value="13">(13) Bouches du Rhône </option>
+                    <option value="14">(14) Calvados </option>
+                    <option value="15">(15) Cantal </option>
+                    <option value="16">(16) Charente </option>
+                    <option value="17">(17) Charente Maritime </option>
+                    <option value="18">(18) Cher </option>
+                    <option value="19">(19) Corrèze </option>
+                    <option value="20">(20) Haute-Corse </option>
+                    <option value="21">(21) Côte d'Or </option>
+                    <option value="22">(22) Côtes d'Armor </option>
+                    <option value="23">(23) Creuse </option>
+                    <option value="24">(24) Dordogne </option>
+                    <option value="25">(25) Doubs </option>
+                    <option value="26">(26) Drôme </option>
+                    <option value="27">(27) Eure </option>
+                    <option value="28">(28) Eure et Loir </option>
+                    <option value="29">(29) Finistère </option>
+                    <option value="30">(30) Gard </option>
+                    <option value="31">(31) Haute Garonne </option>
+                    <option value="32">(32) Gers </option>
+                    <option value="33">(33) Gironde </option>
+                    <option value="34">(34) Hérault </option>
+                    <option value="35">(35) Ille et Vilaine </option>
+                    <option value="36">(36) Indre </option>
+                    <option value="37">(37) Indre et Loire </option>
+                    <option value="38">(38) Isère </option>
+                    <option value="39">(39) Jura </option>
+                    <option value="40">(40) Landes </option>
+                    <option value="41">(41) Loir et Cher </option>
+                    <option value="42">(42) Loire </option>
+                    <option value="43">(43) Haute Loire </option>
+                    <option value="44">(44) Loire Atlantique </option>
+                    <option value="45">(45) Loiret </option>
+                    <option value="46">(46) Lot </option>
+                    <option value="47">(47) Lot et Garonne </option>
+                    <option value="48">(48) Lozère </option>
+                    <option value="49">(49) Maine et Loire </option>
+                    <option value="50">(50) Manche </option>
+                    <option value="51">(51) Marne </option>
+                    <option value="52">(52) Haute Marne </option>
+                    <option value="53">(53) Mayenne </option>
+                    <option value="54">(54) Meurthe et Moselle </option>
+                    <option value="55">(55) Meuse </option>
+                    <option value="56">(56) Morbihan </option>
+                    <option value="57">(57) Moselle </option>
+                    <option value="58">(58) Nièvre </option>
+                    <option value="59">(59) Nord </option>
+                    <option value="60">(60) Oise </option>
+                    <option value="61">(61) Orne </option>
+                    <option value="62">(62) Pas de Calais </option>
+                    <option value="63">(63) Puy de Dôme </option>
+                    <option value="64">(64) Pyrénées Atlantiques </option>
+                    <option value="65">(65) Hautes Pyrénées </option>
+                    <option value="66">(66) Pyrénées Orientales </option>
+                    <option value="67">(67) Bas Rhin </option>
+                    <option value="68">(68) Haut Rhin </option>
+                    <option value="69">(69) Rhône </option>
+                    <option value="70">(70) Haute Saône </option>
+                    <option value="71">(71) Saône et Loire </option>
+                    <option value="72">(72) Sarthe </option>
+                    <option value="73">(73) Savoie </option>
+                    <option value="74">(74) Haute Savoie </option>
+                    <option value="75">(75) Paris </option>
+                    <option value="76">(76) Seine Maritime </option>
+                    <option value="77">(77) Seine et Marne </option>
+                    <option value="78">(78) Yvelines </option>
+                    <option value="79">(79) Deux Sèvres </option>
+                    <option value="80">(80) Somme </option>
+                    <option value="81">(81) Tarn </option>
+                    <option value="82">(82) Tarn et Garonne </option>
+                    <option value="83">(83) Var </option>
+                    <option value="84">(84) Vaucluse </option>
+                    <option value="85">(85) Vendée </option>
+                    <option value="86">(86) Vienne </option>
+                    <option value="87">(87) Haute Vienne </option>
+                    <option value="88">(88) Vosges </option>
+                    <option value="89">(89) Yonne </option>
+                    <option value="90">(90) Territoire de Belfort </option>
+                    <option value="91">(91) Essonne </option>
+                    <option value="92">(92) Hauts de Seine </option>
+                    <option value="93">(93) Seine Saint Denis </option>
+                    <option value="94">(94) Val de Marne </option>
+                    <option value="95">(95) Val d'Oise </option>
+                    <option value="971">(971) Guadeloupe </option>
+                    <option value="972">(972) Martinique </option>
+                    <option value="973">(973) Guyane </option>
+                    <option value="974">(974) Réunion </option>
+                    <option value="975">(975) Saint Pierre et Miquelon </option>
+                    <option value="976">(976) Mayotte </option>
+                  </select>
+                </div>
+                <div *ngIf="formError" class="alert alert-danger">
+                    Veuillez renseignez correctement tous les champs !
+                </div>
+                <div class="form-group">
+                  <label class="switch switch-pill switch-success">Client
+                    <input type="checkbox" class="switch-input" formControlName="deja_client" id="deja_client" checked>
+                    <span class="switch-slider"></span>
+                  </label>
+                </div>
+                <div class="text-right">
+                    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Réinitialiser</button>
+                    <button type="submit" class="btn btn-sm btn-success ml-1"><i class="fa fa-dot-circle-o"></i> Valider</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!--/.col-->
+      </tab>
+      <tab>
+        <ng-template tabHeading><i class="icon-people"></i> Clients</ng-template>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-align-justify"></i> Liste des clients
+            </div>
+            <div class="card-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Date de création</th>
+                    <th>Email</th>
+                    <th>Commandes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let client of clients">
+                    <td>{{client.id}}</td>
+                    <td>{{client.first_name}} {{client.last_name}}</td>
+                    <td>{{client.username}}</td>
+                    <td>{{client.date_created_gmt}}</td>
+                    <td>{{client.email}}</td>
+                    <td>{{client.orders_count}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pull-right">
+                  <button (click)="genererXml()" type="button" class="btn btn-pill btn-block btn-success">Générer XML</button>
+              </div>     
+            </div>
+          </div>
+        </div>
+      </tab>
+      <tab>
+        <ng-template tabHeading><i class="icon-basket"></i> Produits</ng-template>
+        <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-align-justify"></i> Liste des produits
+              </div>
+              <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Nom</th>
+                      <th>Catégorie</th>
+                      <th>Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let produit of produits">
+                      <td>{{produit.id}}</td>
+                      <td>{{produit.name}}</td>
+                      <td>{{produit.categories[0].name}}</td>
+                      <td>{{produit.price}}€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-pill btn-block btn-success">Générer XML</button>
+                </div>     
+              </div>
+            </div>
+          </div>
+      </tab>
+    </tabset>
+  </div><!--/.col-->
 </div>

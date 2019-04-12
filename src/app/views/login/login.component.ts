@@ -11,7 +11,7 @@ import { first } from 'rxjs/operators';
 })
 export class LoginComponent { 
   angForm: FormGroup;
-  loading = false;
+  isLoading = false;
   submitted = false;
   returnUrl: string;
   error = false;
@@ -43,7 +43,7 @@ this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
         return;
     }
 
-    this.loading = true;
+    this.isLoading = true;
     this.authenticationService.login(this.f.username.value, this.f.password.value)
         .pipe(first())
         .subscribe(
@@ -52,7 +52,7 @@ this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
             },
             error => {
               this.error = true;
-              this.loading = false;
+              this.isLoading = false;
             });
     }
 }

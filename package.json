@@ -46,6 +46,7 @@
     "core-js": "^2.6.5",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
+    "file-saver": "^2.0.1",
     "flag-icon-css": "^3.2.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
@@ -59,6 +60,7 @@
     "ts-helpers": "^1.1.2",
     "tsickle": "^0.34.3",
     "tslib": "^1.9.0",
+    "xml-js": "^1.6.11",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
@@ -67,6 +69,7 @@
     "@angular/compiler-cli": "^7.2.6",
     "@angular/language-service": "^7.2.6",
     "@types/datatables.net": "^1.10.16",
+    "@types/file-saver": "^2.0.0",
     "@types/jasmine": "^3.3.9",
     "@types/jasminewd2": "^2.0.6",
     "@types/jquery": "^3.3.29",
